@@ -25,6 +25,8 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 import nltk  # Here to have a nice missing dependency error message early on
+nltk.download("punkt", quiet=True)
+
 import numpy as np
 from datasets import load_dataset, load_metric
 
